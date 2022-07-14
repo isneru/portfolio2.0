@@ -12,5 +12,4 @@ export default {
     shadowPosition: "-100%",
     color: "#fce570",
   },
-  faviconSrc: "src/assets/favicondark.ico",
 };

@@ -15,6 +15,5 @@ declare module "styled-components" {
       shadowPosition: string;
       background: string;
     };
-    faviconSrc: string;
   }
 }

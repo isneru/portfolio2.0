@@ -7,6 +7,9 @@ import { ToggleThemeOverlay } from "./components";
 import GlobalStyle from "./styles/global";
 import usePersistedState from "./utils/usePersistedState";
 
+import favicondark from "./assets/favicondark.ico";
+import faviconlight from "./assets/faviconlight.ico";
+
 export const App: React.FC = () => {
   const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", light);
 
@@ -16,7 +19,8 @@ export const App: React.FC = () => {
 
   useEffect(() => {
     const favicon: any = document.getElementById("favicon");
-    favicon && (favicon.href = theme.faviconSrc);
+    theme.title === "light" && (favicon.href = faviconlight);
+    theme.title === "dark" && (favicon.href = favicondark);
   }, [theme]);
 
   return (

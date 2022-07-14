@@ -12,5 +12,4 @@ export default {
     shadowPosition: "15%",
     color: "#EEE",
   },
-  faviconSrc: "src/assets/faviconlight.ico",
 };
