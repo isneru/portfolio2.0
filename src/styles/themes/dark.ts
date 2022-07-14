@@ -3,7 +3,7 @@ export default {
 
   colors: {
     primary: "#78FFD6",
-    primaryhover: "#1CFFBB",
+    primaryhover: "#4CA68B",
     background: "#191723",
     text: "#EEE",
   },

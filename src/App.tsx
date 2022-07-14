@@ -9,9 +9,10 @@ import usePersistedState from "./utils/usePersistedState";
 
 import favicondark from "./assets/favicondark.ico";
 import faviconlight from "./assets/faviconlight.ico";
+import { Landing } from "./pages";
 
 export const App: React.FC = () => {
-  const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", light);
+  const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", dark);
 
   const toggleTheme = () => {
     setTheme(theme.title === "light" ? dark : light);
@@ -25,6 +26,7 @@ export const App: React.FC = () => {
 
   return (
     <ThemeProvider theme={theme}>
+      <Landing />
       <ToggleThemeOverlay toggleTheme={toggleTheme} />
       <GlobalStyle />
     </ThemeProvider>
