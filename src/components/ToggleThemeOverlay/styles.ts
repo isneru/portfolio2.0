@@ -47,5 +47,5 @@ export const Shadow = styled.div`
   border-radius: 50%;
   background: ${(props) => props.theme.themeSwitch.background};
   left: ${(props) => props.theme.themeSwitch.shadowPosition};
-  transition: left 150ms, background 150ms ease-in-out;
+  transition: left 150ms ease-in-out, background 150ms ease-in-out;
 `;
