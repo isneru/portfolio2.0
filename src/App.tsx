@@ -16,13 +16,7 @@ export const App: React.FC = () => {
 
   useEffect(() => {
     const favicon: any = document.getElementById("favicon");
-    if (favicon) {
-      if (theme === light) {
-        favicon.href = theme.faviconSrc;
-      } else if (theme === dark) {
-        favicon.href = theme.faviconSrc;
-      }
-    }
+    favicon && (favicon.href = theme.faviconSrc);
   }, [theme]);
 
   return (
