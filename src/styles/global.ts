@@ -23,9 +23,11 @@ export default createGlobalStyle`
   @keyframes pulse {
     0% {
       color: ${(props) => props.theme.colors.text};
+      fill: ${(props) => props.theme.colors.text};
     }
     100% {
       color: ${(props) => props.theme.colors.primary};
+      fill: ${(props) => props.theme.colors.primary};
     }
   }
 `;

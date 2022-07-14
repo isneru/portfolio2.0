@@ -1,9 +1,16 @@
 import React from "react";
+import { Logo } from "../Logo";
 
-import { SidebarHelper } from "./Sidebar.helper";
+import { Container, SmallContainer, MiddleContainer } from "./styles";
 
 export const Sidebar: React.FC = () => {
-  const {} = SidebarHelper();
-
-  return <h1>Sidebar</h1>;
+  return (
+    <Container>
+      <SmallContainer>
+        <Logo width="65%" height="65%" />
+      </SmallContainer>
+      <MiddleContainer></MiddleContainer>
+      <SmallContainer></SmallContainer>
+    </Container>
+  );
 };
