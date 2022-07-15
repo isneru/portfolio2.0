@@ -1,6 +1,6 @@
 import React from "react";
 import { Sidebar } from "../../components";
-import { BodyDecals } from "../../components/BodyDecals";
+import { Lower, Upper } from "../../components/BodyDecals";
 
 import {
   Container,
@@ -21,7 +21,9 @@ export const Landing: React.FC = () => {
     <Container>
       <Sidebar />
       <Main>
-        <Header />
+        <Header>
+          <Upper text="main" />
+        </Header>
         <HeroContainer>
           <HeroText>
             <Presentation>
@@ -35,9 +37,10 @@ export const Landing: React.FC = () => {
             </Description>
           </HeroText>
         </HeroContainer>
-        <Footer />
+        <Footer>
+          <Lower text="main" />
+        </Footer>
       </Main>
-      <BodyDecals text="main" />
     </Container>
   );
 };

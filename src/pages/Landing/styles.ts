@@ -17,13 +17,12 @@ export const Container = styled.div`
   grid-template-columns: 6vw 94vw;
   grid-template-rows: 100vh;
   grid-template-areas: "sidebar main";
-  justify-content: center;
-  align-items: center;
 `;
 
 export const Header = styled.div`
   grid-area: centertop;
   border-bottom: 1px ${(props) => props.theme.colors.primary + "33"} solid;
+  position: relative;
 `;
 
 export const Main = styled.div`
@@ -40,10 +39,10 @@ export const Main = styled.div`
 export const HeroContainer = styled.div`
   grid-area: center;
   display: flex;
+  justify-content: center;
 `;
 export const HeroText = styled.div`
-  margin-left: 10%;
-  max-width: 34.125rem;
+  width: min(34.125rem, 90%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,6 +59,9 @@ export const Span = styled.span`
   letter-spacing: -2px;
   font-weight: 400;
   color: ${(props) => props.theme.colors.text};
+  @media (max-width: 425px) {
+    font-size: 3rem;
+  }
 `;
 
 export const Name = styled.strong`
@@ -68,6 +70,9 @@ export const Name = styled.strong`
   letter-spacing: -8px;
   font-weight: 500;
   color: ${(props) => props.theme.colors.text};
+  @media (max-width: 425px) {
+    font-size: 5rem;
+  }
 `;
 
 export const Highlight = styled.span`
@@ -80,8 +85,12 @@ export const Description = styled.span`
   line-height: 100%;
   font-weight: 400;
   color: ${(props) => props.theme.colors.text};
+  @media (max-width: 425px) {
+    font-size: 1rem;
+  }
 `;
 export const Footer = styled.div`
+  position: relative;
   grid-area: centerbottom;
   border-top: 1px ${(props) => props.theme.colors.primary + "33"} solid;
 `;
