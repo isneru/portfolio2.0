@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { ThemeProvider, DefaultTheme } from "styled-components";
 import light from "./styles/themes/light";
 import dark from "./styles/themes/dark";
-import { Logo, Sidebar, ToggleThemeOverlay } from "./components";
+import { ToggleThemeOverlay } from "./components";
 import GlobalStyle from "./styles/global";
 import usePersistedState from "./utils/usePersistedState";
 
@@ -26,10 +26,9 @@ export const App: React.FC = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Sidebar />
       <Landing />
-      <ToggleThemeOverlay toggleTheme={toggleTheme} />
       <GlobalStyle />
+      <ToggleThemeOverlay toggleTheme={toggleTheme} />
     </ThemeProvider>
   );
 };

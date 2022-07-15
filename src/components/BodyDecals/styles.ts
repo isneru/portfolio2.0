@@ -6,29 +6,8 @@ const Decal = css`
   font-size: 0.9rem;
   font-weight: 300;
   color: ${(props) => props.theme.colors.primary};
+  background: ${(props) => props.theme.colors.background};
   font-style: oblique;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-100%);
-    left: -100vw;
-    width: 100vw;
-    height: 1px;
-    background: ${(props) => props.theme.colors.primary};
-    opacity: 0.2;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-100%);
-    left: 104%;
-    width: calc(15vw - 4%);
-    height: 1px;
-    background: ${(props) => props.theme.colors.primary};
-    opacity: 0.2;
-  }
 `;
 
 export const OpeningDecal = styled.span`

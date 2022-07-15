@@ -1,32 +1,33 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
+  grid-area: sidebar;
   border-right: 1px ${(props) => props.theme.colors.primary + "33"} solid;
-  width: 6vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 11vh 78vh 11vh;
+  grid-template-areas:
+    "small"
+    "middle"
+    "smalldown";
 `;
 export const SmallContainer = styled.div`
-  width: 100%;
-  height: 11vh;
+  grid-area: small;
   display: flex;
   justify-content: center;
   align-items: center;
-  & > svg {
-    margin: 10px 10px 0 0;
+  border-bottom: 1px ${(props) => props.theme.colors.primary + "33"} solid;
 
+  & > svg {
     & > path {
       animation: 1.5s pulse infinite alternate;
     }
   }
 `;
 export const MiddleContainer = styled.div`
-  width: 100%;
-  height: 78vh;
+  grid-area: middle;
+`;
+export const SmallDownContainer = styled.div`
+  grid-area: smalldown;
+  border-top: 1px ${(props) => props.theme.colors.primary + "33"} solid;
 `;
