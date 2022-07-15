@@ -2,8 +2,8 @@ export default {
   title: "dark",
 
   colors: {
-    primary: "#78FFD6",
-    primaryhover: "#4CA68B",
+    primary: "#F28482",
+    primaryhover: "#ED5957",
     background: "#191723",
     text: "#EEE",
   },
