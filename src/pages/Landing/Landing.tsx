@@ -1,30 +1,33 @@
 import React from "react";
-import { Sidebar } from "../../components";
+import { Logo, Sidebar } from "../../components";
 import { Lower, Upper } from "../../components/BodyDecals";
 
 import {
-  Container,
-  Main,
   HeroText,
   Presentation,
   Span,
   Name,
   Highlight,
   Description,
-  HeroContainer,
-  Header,
-  Footer,
 } from "./styles";
+
+import {
+  Container,
+  Main,
+  MiddleSection,
+  TopSection,
+  BottomSection,
+} from "../../styles/structure";
 
 export const Landing: React.FC = () => {
   return (
     <Container>
-      <Sidebar />
+      <Sidebar childrentop={<Logo width="100%" height="100%" />} />
       <Main>
-        <Header>
+        <TopSection>
           <Upper text="main" />
-        </Header>
-        <HeroContainer>
+        </TopSection>
+        <MiddleSection>
           <HeroText>
             <Presentation>
               <Span>Hello, world!</Span>
@@ -36,10 +39,10 @@ export const Landing: React.FC = () => {
               A Frontend Developer who chose to hard code his life.
             </Description>
           </HeroText>
-        </HeroContainer>
-        <Footer>
+        </MiddleSection>
+        <BottomSection>
           <Lower text="main" />
-        </Footer>
+        </BottomSection>
       </Main>
     </Container>
   );

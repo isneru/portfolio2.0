@@ -8,14 +8,22 @@ import {
   SmallDownContainer,
 } from "./styles";
 
-export const Sidebar: React.FC = () => {
+interface SidebarProps {
+  childrentop?: JSX.Element;
+  children?: JSX.Element;
+  childrenbottom?: JSX.Element;
+}
+
+export const Sidebar: React.FC<SidebarProps> = ({
+  childrentop,
+  children,
+  childrenbottom,
+}) => {
   return (
     <Container>
-      <SmallContainer>
-        <Logo width="100%" height="100%" />
-      </SmallContainer>
-      <MiddleContainer></MiddleContainer>
-      <SmallDownContainer></SmallDownContainer>
+      <SmallContainer>{childrentop}</SmallContainer>
+      <MiddleContainer>{children}</MiddleContainer>
+      <SmallDownContainer>{childrenbottom}</SmallDownContainer>
     </Container>
   );
 };

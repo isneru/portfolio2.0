@@ -9,9 +9,9 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  position: absolute;
+  position: sticky;
   bottom: 2vh;
-  right: 2vh;
+  left: 95vw;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 12px 0px;
   cursor: pointer;
   transition: transform 100ms ease-in-out, bottom 100ms ease-in-out,

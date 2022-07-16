@@ -9,9 +9,25 @@ export default createGlobalStyle`
     box-sizing: border-box;
     transition: background 150ms ease-in-out, color 150ms ease-in-out;
   }
-  
+    
   html {
     scroll-behavior: smooth;
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: ${(props) => props.theme.colors.background}; 
+      
+    }
+ 
+    ::-webkit-scrollbar-thumb {
+      background: ${(props) => props.theme.colors.primary}; 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: ${(props) => props.theme.colors.primaryhover}; 
+    }
   }
   
   body {
