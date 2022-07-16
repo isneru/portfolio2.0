@@ -3,6 +3,11 @@ import { Logo, Sidebar } from "../../components";
 import { Lower, Upper } from "../../components/BodyDecals";
 
 import {
+  Container,
+  Main,
+  MiddleSection,
+  TopSection,
+  BottomSection,
   HeroText,
   Presentation,
   Span,
@@ -10,14 +15,6 @@ import {
   Highlight,
   Description,
 } from "./styles";
-
-import {
-  Container,
-  Main,
-  MiddleSection,
-  TopSection,
-  BottomSection,
-} from "../../styles/structure";
 
 export const Landing: React.FC = () => {
   return (

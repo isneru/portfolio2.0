@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Button = styled.button`
   height: 3.5rem;
   width: 3.5rem;
-  background: ${(props) => props.theme.themeSwitch.background};
-  border: none;
+  background: 1px ${(props) => props.theme.colors.background};
+  border: 1px ${(props) => props.theme.colors.primary} solid;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,10 +12,11 @@ export const Button = styled.button`
   position: fixed;
   bottom: 3vh;
   right: 1.5vw;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 12px 0px;
+  box-shadow: ${(props) => props.theme.colors.primary + "22"} 0px 0px 10px 2px,
+    ${(props) => props.theme.colors.primary + "22"} inset 0px 0px 10px 2px;
   cursor: pointer;
   transition: transform 100ms ease-in-out, bottom 100ms ease-in-out,
-    background 150ms ease-in-out;
+    border 150ms ease-in-out, background 150ms ease-in-out;
   &:hover {
     transform: scale(1.06);
     bottom: calc(3vh + 4px);
@@ -36,8 +37,9 @@ export const Sun = styled.div`
   width: 40%;
   height: 40%;
   border-radius: 50%;
-  background: ${(props) => props.theme.themeSwitch.color};
+  background: ${(props) => props.theme.colors.primary};
   transition: background 150ms ease-in-out;
+  position: relative;
 `;
 
 export const Shadow = styled.div`
@@ -45,7 +47,8 @@ export const Shadow = styled.div`
   width: 40%;
   height: 40%;
   border-radius: 50%;
-  background: ${(props) => props.theme.themeSwitch.background};
+  background: ${(props) => props.theme.colors.background};
   left: ${(props) => props.theme.themeSwitch.shadowPosition};
+  top: 20%;
   transition: left 150ms ease-in-out, background 150ms ease-in-out;
 `;

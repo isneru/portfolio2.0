@@ -7,7 +7,7 @@ import {
   MiddleSection,
   TopSection,
   BottomSection,
-} from "../../styles/structure";
+} from "./styles";
 
 export const About: React.FC = () => {
   return (

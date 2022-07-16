@@ -1,4 +1,11 @@
 import styled from "styled-components";
+import {
+  ContainerCSS,
+  MainCSS,
+  BottomSectionCSS,
+  MiddleSectionCSS,
+  TopSectionCSS,
+} from "./../../styles/structure";
 
 export const HeroText = styled.div`
   width: min(34.125rem, 90%);
@@ -57,4 +64,20 @@ export const Description = styled.span`
   @media (max-width: 375px) {
     font-size: 0.5;
   }
+`;
+
+export const Container = styled.div`
+  ${ContainerCSS}
+`;
+export const Main = styled.div`
+  ${MainCSS}
+`;
+export const MiddleSection = styled.div`
+  ${MiddleSectionCSS}
+`;
+export const TopSection = styled.div`
+  ${TopSectionCSS}
+`;
+export const BottomSection = styled.div`
+  ${BottomSectionCSS}
 `;

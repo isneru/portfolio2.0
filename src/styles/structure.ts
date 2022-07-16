@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const Container = styled.div`
+export const ContainerCSS = css`
   width: 100%;
   height: 100vh;
   background: ${(props) => props.theme.colors.background};
@@ -10,13 +10,13 @@ export const Container = styled.div`
   grid-template-areas: "sidebar main";
 `;
 
-export const TopSection = styled.div`
+export const TopSectionCSS = css`
   grid-area: centertop;
   border-bottom: 1px ${(props) => props.theme.colors.primary + "33"} solid;
   position: relative;
 `;
 
-export const Main = styled.div`
+export const MainCSS = css`
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr;
@@ -27,13 +27,13 @@ export const Main = styled.div`
     "centerbottom";
 `;
 
-export const MiddleSection = styled.div`
+export const MiddleSectionCSS = css`
   grid-area: center;
   display: flex;
   justify-content: center;
 `;
 
-export const BottomSection = styled.div`
+export const BottomSectionCSS = css`
   position: relative;
   grid-area: centerbottom;
   border-top: 1px ${(props) => props.theme.colors.primary + "33"} solid;
