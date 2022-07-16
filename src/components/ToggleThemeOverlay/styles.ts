@@ -9,16 +9,16 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  position: sticky;
-  bottom: 2vh;
-  left: 95vw;
+  position: fixed;
+  bottom: 3vh;
+  right: 1.5vw;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 12px 0px;
   cursor: pointer;
   transition: transform 100ms ease-in-out, bottom 100ms ease-in-out,
     background 150ms ease-in-out;
   &:hover {
     transform: scale(1.06);
-    bottom: calc(2vh + 4px);
+    bottom: calc(3vh + 4px);
   }
 `;
 
