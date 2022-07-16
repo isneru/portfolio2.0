@@ -19,8 +19,11 @@ export const Span = styled.span`
   letter-spacing: -2px;
   font-weight: 400;
   color: ${(props) => props.theme.colors.text};
-  @media (max-width: 425px) {
+  @media (max-width: 520px) {
     font-size: 3rem;
+  }
+  @media (max-width: 375px) {
+    font-size: 2rem;
   }
 `;
 
@@ -30,8 +33,11 @@ export const Name = styled.strong`
   letter-spacing: -8px;
   font-weight: 500;
   color: ${(props) => props.theme.colors.text};
-  @media (max-width: 425px) {
+  @media (max-width: 520px) {
     font-size: 5rem;
+  }
+  @media (max-width: 375px) {
+    font-size: 4rem;
   }
 `;
 
@@ -45,7 +51,10 @@ export const Description = styled.span`
   line-height: 100%;
   font-weight: 400;
   color: ${(props) => props.theme.colors.text};
-  @media (max-width: 425px) {
+  @media (max-width: 520px) {
     font-size: 1rem;
+  }
+  @media (max-width: 375px) {
+    font-size: 0.5;
   }
 `;
