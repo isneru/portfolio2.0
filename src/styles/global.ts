@@ -13,7 +13,7 @@ export default createGlobalStyle`
   html {
     scroll-behavior: smooth;
     ::-webkit-scrollbar {
-      width: 10px;
+      width: 8px;
     }
 
     ::-webkit-scrollbar-track {
