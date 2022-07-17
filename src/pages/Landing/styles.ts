@@ -66,7 +66,7 @@ export const Description = styled.span`
   }
 `;
 
-export const Container = styled.div`
+export const Container = styled.section`
   ${ContainerCSS}
 `;
 export const Main = styled.div`

@@ -7,7 +7,7 @@ import {
   TopSectionCSS,
 } from "./../../styles/structure";
 
-export const Container = styled.div`
+export const Container = styled.section`
   ${ContainerCSS}
 `;
 export const Main = styled.div`

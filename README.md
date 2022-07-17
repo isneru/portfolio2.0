@@ -28,8 +28,7 @@ By building this application, I was able to improve my skills, such as:
 #### Styling
 
 - [x] Styled-Components
-- [ ] Framer-Motion
-- [ ] React-Intersection-Observer
+- [ ] Styled-Icons
 
 #### Deploy
 
