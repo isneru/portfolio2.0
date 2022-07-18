@@ -1,4 +1,4 @@
-![](https://i.imgur.com/VxJlNnV.png)
+![](https://i.imgur.com/HWQIbZ5.png)
 
 # Frontend Application ⚠️ in Progress ⚠️
 
