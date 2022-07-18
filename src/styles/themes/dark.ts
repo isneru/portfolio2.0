@@ -5,7 +5,7 @@ export default {
     primary: "#F28482",
     primaryhover: "#ED5957",
     background: "#191723",
-    text: "#EEE",
+    text: "#EEEEEE",
   },
   themeSwitch: {
     background: "#6EC5E9",

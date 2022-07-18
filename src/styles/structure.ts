@@ -31,6 +31,7 @@ export const MiddleSectionCSS = css`
   grid-area: center;
   display: flex;
   justify-content: center;
+  align-items: center;
 `;
 
 export const BottomSectionCSS = css`

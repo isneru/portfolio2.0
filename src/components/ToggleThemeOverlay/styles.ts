@@ -12,6 +12,7 @@ export const Button = styled.button`
   position: fixed;
   bottom: 3vh;
   right: 1.5vw;
+  z-index: 100;
   box-shadow: ${(props) => props.theme.colors.primary + "22"} 0px 0px 10px 2px,
     ${(props) => props.theme.colors.primary + "22"} inset 0px 0px 10px 2px;
   cursor: pointer;
