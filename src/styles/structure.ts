@@ -5,7 +5,7 @@ export const ContainerCSS = css`
   height: 100vh;
   background: ${(props) => props.theme.colors.background};
   display: grid;
-  grid-template-columns: 6vw 1fr;
+  grid-template-columns: 100px 1fr;
   grid-template-rows: 100vh;
   grid-template-areas: "sidebar main";
 `;

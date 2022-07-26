@@ -27,10 +27,10 @@ export const Span = styled.span`
   font-weight: 400;
   color: ${(props) => props.theme.colors.text};
   @media (max-width: 520px) {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   @media (max-width: 375px) {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 `;
 
@@ -41,10 +41,10 @@ export const Name = styled.strong`
   font-weight: 500;
   color: ${(props) => props.theme.colors.text};
   @media (max-width: 520px) {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   @media (max-width: 375px) {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 `;
 
